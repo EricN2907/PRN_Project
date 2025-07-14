@@ -1,0 +1,12 @@
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\bin\Debug\net8.0\DNA.DataAccessLayer.deps.json
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\bin\Debug\net8.0\DNA.DataAccessLayer.dll
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\bin\Debug\net8.0\DNA.DataAccessLayer.pdb
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.AssemblyInfoInputs.cache
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.AssemblyInfo.cs
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.sourcelink.json
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.dll
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\refint\DNA.DataAccessLayer.dll
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.pdb
+D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\ref\DNA.DataAccessLayer.dll

@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DNA.BussinessObject\DNA.BussinessObject.csproj" />
+    <ProjectReference Include="..\DNA.DataAccessLayer\DNA.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\DNA.Repository\DNA.Repository.csproj" />
+    <ProjectReference Include="..\DNA.Service\DNA.Service.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+    <Resource Include="Assests\dna_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+
+</Project>

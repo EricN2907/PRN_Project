@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DNA.BussinessObject\DNA.BussinessObject.csproj" />
+    <ProjectReference Include="..\DNA.DataAccessLayer\DNA.DataAccessLayer.csproj" />
+    <ProjectReference Include="..\DNA.Repository\DNA.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

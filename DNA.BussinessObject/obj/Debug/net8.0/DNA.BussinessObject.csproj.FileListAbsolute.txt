@@ -1,0 +1,12 @@
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\bin\Debug\net8.0\DNA.BussinessObject.deps.json
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\bin\Debug\net8.0\DNA.BussinessObject.dll
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\bin\Debug\net8.0\DNA.BussinessObject.pdb
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.AssemblyInfoInputs.cache
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.AssemblyInfo.cs
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.csproj.CoreCompileInputs.cache
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.sourcelink.json
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.dll
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\refint\DNA.BussinessObject.dll
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.pdb
+D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\ref\DNA.BussinessObject.dll

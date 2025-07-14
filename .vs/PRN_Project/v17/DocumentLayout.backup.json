@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPT\\PRN211\\PRN_Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D1B2E9-AB49-44F3-AF07-E5E4E5E828A9}|DNA.Service\\DNA.Service.csproj|d:\\fpt\\prn211\\prn_project\\dna.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D1B2E9-AB49-44F3-AF07-E5E4E5E828A9}|DNA.Service\\DNA.Service.csproj|solutionrelative:dna.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F5BEC47-6AA3-458D-AB84-116747DC70BC}|DNA.Repository\\DNA.Repository.csproj|d:\\fpt\\prn211\\prn_project\\dna.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F5BEC47-6AA3-458D-AB84-116747DC70BC}|DNA.Repository\\DNA.Repository.csproj|solutionrelative:dna.repository\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hoang\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|d:\\fpt\\prn211\\prn_project\\dna.wpfapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|solutionrelative:dna.wpfapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|d:\\fpt\\prn211\\prn_project\\dna.wpfapp\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|solutionrelative:dna.wpfapp\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2D1B2E9-AB49-44F3-AF07-E5E4E5E828A9}|DNA.Service\\DNA.Service.csproj|d:\\fpt\\prn211\\prn_project\\dna.service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2D1B2E9-AB49-44F3-AF07-E5E4E5E828A9}|DNA.Service\\DNA.Service.csproj|solutionrelative:dna.service\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|d:\\fpt\\prn211\\prn_project\\dna.wpfapp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|solutionrelative:dna.wpfapp\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|d:\\fpt\\prn211\\prn_project\\dna.wpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|solutionrelative:dna.wpfapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|d:\\fpt\\prn211\\prn_project\\dna.wpfapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|solutionrelative:dna.wpfapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92B13132-38A8-44D2-9378-B9F8D974B321}|DNA.BussinessObject\\DNA.BussinessObject.csproj|d:\\fpt\\prn211\\prn_project\\dna.bussinessobject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92B13132-38A8-44D2-9378-B9F8D974B321}|DNA.BussinessObject\\DNA.BussinessObject.csproj|solutionrelative:dna.bussinessobject\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F5BEC47-6AA3-458D-AB84-116747DC70BC}|DNA.Repository\\DNA.Repository.csproj|d:\\fpt\\prn211\\prn_project\\dna.repository\\dna.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3F5BEC47-6AA3-458D-AB84-116747DC70BC}|DNA.Repository\\DNA.Repository.csproj|solutionrelative:dna.repository\\dna.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92B13132-38A8-44D2-9378-B9F8D974B321}|DNA.BussinessObject\\DNA.BussinessObject.csproj|d:\\fpt\\prn211\\prn_project\\dna.bussinessobject\\dna.bussinessobject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{92B13132-38A8-44D2-9378-B9F8D974B321}|DNA.BussinessObject\\DNA.BussinessObject.csproj|solutionrelative:dna.bussinessobject\\dna.bussinessobject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|d:\\fpt\\prn211\\prn_project\\dna.wpfapp\\dna.wpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F6B5569C-0879-4F31-A4C6-74B20AAC18A4}|DNA.WpfApp\\DNA.WpfApp.csproj|solutionrelative:dna.wpfapp\\dna.wpfapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\hoang\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\hoang\\AppData\\Local\\Temp\\.vsdbgsrc\\811f0c1102ba7a3d32ee827d0bb52f1af2ec958c7f3fb7abe7c05f601195e6c8\\XamlReader.cs [Read Only]",
+              "ViewState": "AgIAALUBAAAAAAAAAAAIwLQBAAACAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T03:06:10.168Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\IUserService.cs",
+              "RelativeDocumentMoniker": "DNA.Service\\IUserService.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\IUserService.cs",
+              "RelativeToolTip": "DNA.Service\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:56:28.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\UserService.cs",
+              "RelativeDocumentMoniker": "DNA.Service\\UserService.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\UserService.cs",
+              "RelativeToolTip": "DNA.Service\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:51:49.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "DNA.WpfApp\\App.xaml.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\App.xaml.cs",
+              "RelativeToolTip": "DNA.WpfApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T02:43:37.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DNA.WpfApp\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "DNA.WpfApp\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T17:27:45.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DNA.Repository\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DNA.Repository\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T17:25:10.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DNA.Repository",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj",
+              "RelativeDocumentMoniker": "DNA.Repository\\DNA.Repository.csproj",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj",
+              "RelativeToolTip": "DNA.Repository\\DNA.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-13T17:24:30.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\User.cs",
+              "RelativeDocumentMoniker": "DNA.BussinessObject\\User.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\User.cs",
+              "RelativeToolTip": "DNA.BussinessObject\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T17:20:39.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DNA.BussinessObject",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
+              "RelativeDocumentMoniker": "DNA.BussinessObject\\DNA.BussinessObject.csproj",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
+              "RelativeToolTip": "DNA.BussinessObject\\DNA.BussinessObject.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-13T17:20:17.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "DNA.WpfApp\\AssemblyInfo.cs",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\AssemblyInfo.cs",
+              "RelativeToolTip": "DNA.WpfApp\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T16:36:28.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\App.xaml",
+              "RelativeDocumentMoniker": "DNA.WpfApp\\App.xaml",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\App.xaml",
+              "RelativeToolTip": "DNA.WpfApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-13T16:54:54.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DNA.WpfApp",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\DNA.WpfApp.csproj",
+              "RelativeDocumentMoniker": "DNA.WpfApp\\DNA.WpfApp.csproj",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\DNA.WpfApp.csproj",
+              "RelativeToolTip": "DNA.WpfApp\\DNA.WpfApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-13T16:46:11.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "DNA.WpfApp\\LoginWindow.xaml",
+              "ToolTip": "D:\\FPT\\PRN211\\PRN_Project\\DNA.WpfApp\\LoginWindow.xaml",
+              "RelativeToolTip": "DNA.WpfApp\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-13T16:36:49.404Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
