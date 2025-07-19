@@ -1,0 +1,81 @@
+<Window x:Class="DNA.WpfApp.Windows.DNADashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dashboard ADN - Tổng quan" Height="800" Width="1200"
+        WindowStartupLocation="CenterOwner" Background="White">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Text="📊 Dashboard ADN - Tổng quan hệ thống" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <!-- Statistics Cards -->
+                <TextBlock Text="📈 Thống kê tổng quan" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,15"/>
+                
+                <UniformGrid Rows="2" Columns="3" Margin="0,0,0,30">
+                    <Border Background="LightBlue" Margin="5" Padding="15" CornerRadius="5">
+                        <StackPanel>
+                            <TextBlock Text="🧬" FontSize="24" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Tổng xét nghiệm" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="1,234" FontSize="20" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Background="LightGreen" Margin="5" Padding="15" CornerRadius="5">
+                        <StackPanel>
+                            <TextBlock Text="✅" FontSize="24" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Hoàn thành" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="856" FontSize="20" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Background="LightYellow" Margin="5" Padding="15" CornerRadius="5">
+                        <StackPanel>
+                            <TextBlock Text="⏳" FontSize="24" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Đang xử lý" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="378" FontSize="20" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Background="LightCoral" Margin="5" Padding="15" CornerRadius="5">
+                        <StackPanel>
+                            <TextBlock Text="👥" FontSize="24" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Bệnh nhân" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="567" FontSize="20" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Background="LightPink" Margin="5" Padding="15" CornerRadius="5">
+                        <StackPanel>
+                            <TextBlock Text="💰" FontSize="24" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Doanh thu (tháng)" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="45,6M" FontSize="20" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                    
+                    <Border Background="LightGray" Margin="5" Padding="15" CornerRadius="5">
+                        <StackPanel>
+                            <TextBlock Text="⭐" FontSize="24" HorizontalAlignment="Center"/>
+                            <TextBlock Text="Đánh giá TB" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock Text="4.8/5" FontSize="20" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Border>
+                </UniformGrid>
+                
+                <TextBlock Text="📋 Hoạt động gần đây" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,15"/>
+                <TextBlock Text="• Xét nghiệm ADN #1234 hoàn thành" Margin="0,5"/>
+                <TextBlock Text="• Bệnh nhân Nguyễn Văn A đăng ký dịch vụ mới" Margin="0,5"/>
+                <TextBlock Text="• Kit xét nghiệm được gửi đến Trần Thị B" Margin="0,5"/>
+                <TextBlock Text="• Kết quả xét nghiệm #1230 được phê duyệt" Margin="0,5"/>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <Button Grid.Row="2" Content="Đóng" Click="BtnClose_Click" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\FPT\PRN211\PRN_Project\DNA.WpfApp\obj\Debug\net8.0-windows\
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.WpfApp\obj\Debug\net8.0-windows\
 DNA.WpfApp
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\FPT\PRN211\PRN_Project\DNA.WpfApp\App.xaml
-1-1623698816
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.WpfApp\App.xaml
+22-1796387844
 
-6137323072
-238850750493
-LoginWindow.xaml;
+29397259074
+239648814456
+LoginWindow.xaml;MainWindow.xaml;Pages\BookingPage.xaml;Pages\DashboardPage.xaml;Pages\HomePage.xaml;Pages\Patients\PatientsPage.xaml;Pages\TreatmentServicesPage.xaml;Pages\Treatments\TreatmentProgressPage.xaml;Pages\Treatments\TreatmentRegistrationPage.xaml;Windows\AddEditPatientWindow.xaml;Windows\ComprehensiveReportWindow.xaml;Windows\DNADashboardWindow.xaml;Windows\DNAServicesManagementWindow.xaml;Windows\DNATestBookingWindow.xaml;Windows\DNATestHistoryWindow.xaml;Windows\DNATestProgressWindow.xaml;Windows\DNATestResultsWindow.xaml;Windows\HomeSampleScheduleWindow.xaml;Windows\PatientFeedbackWindow.xaml;Windows\PatientRecordWindow.xaml;Windows\PricingManagementWindow.xaml;Windows\SampleKitRequestWindow.xaml;
 
 False
 

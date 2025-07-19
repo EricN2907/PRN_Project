@@ -1,0 +1,72 @@
+<Window x:Class="DNA.WpfApp.Windows.DNATestBookingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Đặt xét nghiệm ADN" Height="600" Width="800"
+        WindowStartupLocation="CenterOwner"
+        Background="White">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <TextBlock Grid.Row="0" Text="Đặt xét nghiệm ADN" FontSize="24" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+
+        <!-- Content -->
+        <ScrollViewer Grid.Row="1">
+            <StackPanel>
+                <GroupBox Header="Thông tin bệnh nhân" Margin="0,0,0,15">
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="150"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Họ và tên:" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1" x:Name="txtPatientName" FontWeight="Bold"/>
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Email:" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Row="1" Grid.Column="1" x:Name="txtPatientEmail"/>
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Số điện thoại:" VerticalAlignment="Center"/>
+                        <TextBlock Grid.Row="2" Grid.Column="1" x:Name="txtPatientPhone"/>
+                    </Grid>
+                </GroupBox>
+
+                <GroupBox Header="Chọn dịch vụ xét nghiệm" Margin="0,0,0,15">
+                    <ComboBox x:Name="cmbServices" DisplayMemberPath="ServiceName" 
+                              SelectedValuePath="ServiceId" Margin="10"/>
+                </GroupBox>
+
+                <GroupBox Header="Phương thức thu mẫu" Margin="0,0,0,15">
+                    <StackPanel Margin="10">
+                        <RadioButton x:Name="rbHomeSample" Content="Thu mẫu tại nhà" GroupName="SampleMethod" IsChecked="True"/>
+                        <RadioButton x:Name="rbClinicSample" Content="Thu mẫu tại cơ sở" GroupName="SampleMethod" Margin="0,5,0,0"/>
+                        <RadioButton x:Name="rbSelfSample" Content="Tự thu thập mẫu" GroupName="SampleMethod" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Ghi chú" Margin="0,0,0,15">
+                    <TextBox x:Name="txtNotes" AcceptsReturn="True" Height="80" 
+                             ScrollViewer.VerticalScrollBarVisibility="Auto" Margin="10"/>
+                </GroupBox>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+            <Button Content="Đặt xét nghiệm" Click="BtnBook_Click" 
+                    Style="{StaticResource PrimaryButtonStyle}" Padding="15,8" Margin="0,0,10,0"/>
+            <Button Content="Hủy" Click="BtnCancel_Click" 
+                    Style="{StaticResource SecondaryButtonStyle}" Padding="15,8"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,100 @@
+<Page x:Class="DNA.WpfApp.Pages.TreatmentServicesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Treatment Services Management">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Column="0" Text="Quản lý dịch vụ điều trị hiếm muộn" FontSize="28" FontWeight="Bold" VerticalAlignment="Center"/>
+            <Button Grid.Column="1" x:Name="btnAddService" Content="➕ Thêm dịch vụ mới" Click="BtnAddService_Click"
+                    Style="{StaticResource PrimaryButtonStyle}" Padding="15,8"/>
+        </Grid>
+        
+        <!-- Filter Controls -->
+        <Grid Grid.Row="1" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBox Grid.Column="0" x:Name="txtSearch" Style="{StaticResource InputTextBoxStyle}"
+                     Tag="Tìm kiếm theo tên dịch vụ..." TextChanged="TxtSearch_TextChanged"/>
+            
+            <ComboBox Grid.Column="2" x:Name="cmbTreatmentTypeFilter" SelectionChanged="CmbTreatmentTypeFilter_SelectionChanged">
+                <ComboBoxItem Content="Tất cả loại điều trị"/>
+                <ComboBoxItem Content="IUI"/>
+                <ComboBoxItem Content="IVF"/>
+                <ComboBoxItem Content="ICSI"/>
+                <ComboBoxItem Content="Khác"/>
+            </ComboBox>
+            
+            <ComboBox Grid.Column="4" x:Name="cmbStatusFilter" SelectionChanged="CmbStatusFilter_SelectionChanged">
+                <ComboBoxItem Content="Tất cả trạng thái"/>
+                <ComboBoxItem Content="Đang hoạt động"/>
+                <ComboBoxItem Content="Ngừng hoạt động"/>
+            </ComboBox>
+        </Grid>
+        
+        <!-- Services Grid -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}">
+            <Grid>
+                <DataGrid x:Name="dgServices" AutoGenerateColumns="False" IsReadOnly="True"
+                          SelectionMode="Single" GridLinesVisibility="Horizontal"
+                          RowHeaderWidth="0" CanUserResizeRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding ServiceId}" Width="60"/>
+                        <DataGridTextColumn Header="Mã dịch vụ" Binding="{Binding ServiceCode}" Width="100"/>
+                        <DataGridTextColumn Header="Tên dịch vụ" Binding="{Binding ServiceName}" Width="250"/>
+                        <DataGridTextColumn Header="Loại điều trị" Binding="{Binding TreatmentType}" Width="120"/>
+                        <DataGridTextColumn Header="Giá (VNĐ)" Binding="{Binding Price, StringFormat=N0}" Width="120"/>
+                        <DataGridTextColumn Header="Thời gian (ngày)" Binding="{Binding DurationDays}" Width="120"/>
+                        <DataGridCheckBoxColumn Header="Hoạt động" Binding="{Binding IsActive}" Width="80"/>
+                        <DataGridTextColumn Header="Ngày tạo" Binding="{Binding CreatedDate, StringFormat=dd/MM/yyyy}" Width="100"/>
+                        <DataGridTemplateColumn Header="Thao tác" Width="250">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="👁️" ToolTip="Xem chi tiết" Tag="{Binding ServiceId}" 
+                                                Click="BtnViewService_Click" Margin="2" Padding="8,4" Background="#17A2B8" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="✏️" ToolTip="Chỉnh sửa" Tag="{Binding ServiceId}" 
+                                                Click="BtnEditService_Click" Margin="2" Padding="8,4" Background="#FFC107" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="📋" ToolTip="Quy trình điều trị" Tag="{Binding ServiceId}" 
+                                                Click="BtnTreatmentSteps_Click" Margin="2" Padding="8,4" Background="#28A745" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="💰" ToolTip="Bảng giá" Tag="{Binding ServiceId}" 
+                                                Click="BtnPricing_Click" Margin="2" Padding="8,4" Background="#6F42C1" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="❌" ToolTip="Vô hiệu hóa" Tag="{Binding ServiceId}" 
+                                                Click="BtnDeactivateService_Click" Margin="2" Padding="8,4" Background="#DC3545" Foreground="White" BorderThickness="0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                
+                <!-- Loading Indicator -->
+                <TextBlock x:Name="txtLoading" Text="Đang tải dữ liệu..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16" Foreground="Gray" Visibility="Collapsed"/>
+                
+                <!-- No Data Message -->
+                <TextBlock x:Name="txtNoData" Text="Không có dữ liệu dịch vụ" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16" Foreground="Gray" Visibility="Collapsed"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

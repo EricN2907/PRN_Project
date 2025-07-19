@@ -1,0 +1,21 @@
+<Window x:Class="DNA.WpfApp.Windows.PatientFeedbackWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Đánh giá và phản hồi khách hàng" Height="600" Width="800"
+        WindowStartupLocation="CenterOwner" Background="White">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Text="Đánh giá và phản hồi khách hàng" FontSize="20" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        
+        <TextBlock Grid.Row="1" Text="Chức năng xem đánh giá khách hàng đang được phát triển..." 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        
+        <Button Grid.Row="2" Content="Đóng" Click="BtnClose_Click" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

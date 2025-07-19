@@ -1,0 +1,109 @@
+<Page x:Class="DNA.WpfApp.Pages.Treatments.TreatmentProgressPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Treatment Progress">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Header -->
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Column="0" Text="Theo dõi tiến độ điều trị" FontSize="28" FontWeight="Bold" VerticalAlignment="Center"/>
+            <Button Grid.Column="1" x:Name="btnAddProgress" Content="➕ Cập nhật tiến độ" Click="BtnAddProgress_Click"
+                    Style="{StaticResource PrimaryButtonStyle}" Padding="15,8"/>
+        </Grid>
+        
+        <!-- Filter Controls -->
+        <Grid Grid.Row="1" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="20"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBox Grid.Column="0" x:Name="txtSearch" Style="{StaticResource InputTextBoxStyle}"
+                     Tag="Tìm kiếm theo tên bệnh nhân..." TextChanged="TxtSearch_TextChanged"/>
+            
+            <ComboBox Grid.Column="2" x:Name="cmbTreatmentTypeFilter" SelectionChanged="CmbTreatmentTypeFilter_SelectionChanged">
+                <ComboBoxItem Content="Tất cả loại điều trị"/>
+                <ComboBoxItem Content="IUI"/>
+                <ComboBoxItem Content="IVF"/>
+                <ComboBoxItem Content="ICSI"/>
+            </ComboBox>
+            
+            <ComboBox Grid.Column="4" x:Name="cmbStatusFilter" SelectionChanged="CmbStatusFilter_SelectionChanged">
+                <ComboBoxItem Content="Tất cả trạng thái"/>
+                <ComboBoxItem Content="Đã đăng ký"/>
+                <ComboBoxItem Content="Đang điều trị"/>
+                <ComboBoxItem Content="Hoàn thành"/>
+                <ComboBoxItem Content="Đã hủy"/>
+            </ComboBox>
+        </Grid>
+        
+        <!-- Treatment Progress List -->
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}">
+            <Grid>
+                <DataGrid x:Name="dgTreatmentProgress" AutoGenerateColumns="False" IsReadOnly="True"
+                          SelectionMode="Single" GridLinesVisibility="Horizontal"
+                          RowHeaderWidth="0" CanUserResizeRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Mã ĐK" Binding="{Binding RegistrationId}" Width="80"/>
+                        <DataGridTextColumn Header="Bệnh nhân" Binding="{Binding PatientName}" Width="200"/>
+                        <DataGridTextColumn Header="Dịch vụ" Binding="{Binding ServiceName}" Width="200"/>
+                        <DataGridTextColumn Header="Bác sĩ" Binding="{Binding DoctorName}" Width="150"/>
+                        <DataGridTextColumn Header="Ngày bắt đầu" Binding="{Binding StartDate, StringFormat=dd/MM/yyyy}" Width="100"/>
+                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
+                        <DataGridTemplateColumn Header="Tiến độ" Width="150">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <ProgressBar Value="{Binding ProgressPercentage}" Maximum="100" Height="15" 
+                                                     Foreground="{Binding ProgressColor}" Background="#E0E0E0"/>
+                                        <TextBlock Text="{Binding ProgressPercentage, StringFormat='{}{0}%'}" 
+                                                   HorizontalAlignment="Center" FontSize="10"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Thao tác" Width="200">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="👁️" ToolTip="Xem chi tiết" Tag="{Binding RegistrationId}" 
+                                                Click="BtnViewDetails_Click" Margin="2" Padding="8,4" Background="#17A2B8" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="📋" ToolTip="Cập nhật tiến độ" Tag="{Binding RegistrationId}" 
+                                                Click="BtnUpdateProgress_Click" Margin="2" Padding="8,4" Background="#28A745" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="💊" ToolTip="Lịch thuốc" Tag="{Binding RegistrationId}" 
+                                                Click="BtnMedicationSchedule_Click" Margin="2" Padding="8,4" Background="#FFC107" Foreground="White" BorderThickness="0"/>
+                                        <Button Content="📅" ToolTip="Lịch hẹn" Tag="{Binding RegistrationId}" 
+                                                Click="BtnAppointments_Click" Margin="2" Padding="8,4" Background="#6F42C1" Foreground="White" BorderThickness="0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                
+                <!-- Loading Indicator -->
+                <TextBlock x:Name="txtLoading" Text="Đang tải dữ liệu..." HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16" Foreground="Gray" Visibility="Collapsed"/>
+                
+                <!-- No Data Message -->
+                <TextBlock x:Name="txtNoData" Text="Không có dữ liệu điều trị" HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16" Foreground="Gray" Visibility="Collapsed"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

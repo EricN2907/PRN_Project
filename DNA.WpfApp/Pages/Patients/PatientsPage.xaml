@@ -1,0 +1,181 @@
+<Page x:Class="DNA.WpfApp.Pages.Patients.PatientsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Patients Management"
+      Background="White">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title and Add Patient Button -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Corrected ampersand here -->
+                <TextBlock Grid.Column="0" Text="Quản lý bệnh nhân &amp; dịch vụ xét nghiệm ADN" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+                <Button Grid.Column="1" x:Name="btnAddPatient" Content="➕ Thêm bệnh nhân mới" Click="BtnAddPatient_Click"
+                        Style="{StaticResource PrimaryButtonStyle}" Padding="15,8"/>
+            </Grid>            <!-- Quick Actions Toolbar -->
+            <StackPanel Grid.Row="2" x:Name="quickActionsPanel" Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBlock Text="Thao tác nhanh:" VerticalAlignment="Center" FontWeight="SemiBold" Margin="0,0,10,0"/>
+                <Button Content="📊 Dashboard ADN" Style="{StaticResource SecondaryButtonStyle}" 
+                        Click="BtnDNADashboard_Click" Margin="0,0,5,0" Padding="8,4"/>
+                <Button Content="🧪 Quản lý dịch vụ" Style="{StaticResource SecondaryButtonStyle}" 
+                        Click="BtnManageServices_Click" Margin="0,0,5,0" Padding="8,4"/>
+                <Button Content="📈 Báo cáo tổng hợp" Style="{StaticResource SecondaryButtonStyle}" 
+                        Click="BtnComprehensiveReport_Click" Margin="0,0,5,0" Padding="8,4"/>
+                <Button Content="⚙️ Cài đặt bảng giá" Style="{StaticResource SecondaryButtonStyle}" 
+                        Click="BtnManagePricing_Click" Padding="8,4"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- First row of filters -->
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="20"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBox Grid.Column="0" x:Name="txtSearch" Style="{StaticResource InputTextBoxStyle}"
+                         Tag="Tìm kiếm theo tên, email, số điện thoại..." TextChanged="TxtSearch_TextChanged"/>
+
+                <ComboBox Grid.Column="2" x:Name="cmbGenderFilter" SelectionChanged="CmbGenderFilter_SelectionChanged">
+                    <ComboBoxItem Content="Tất cả giới tính"/>
+                    <ComboBoxItem Content="Nam"/>
+                    <ComboBoxItem Content="Nữ"/>
+                </ComboBox>
+
+                <ComboBox Grid.Column="4" x:Name="cmbStatusFilter" SelectionChanged="CmbStatusFilter_SelectionChanged">
+                    <ComboBoxItem Content="Tất cả trạng thái"/>
+                    <ComboBoxItem Content="Đang hoạt động"/>
+                    <ComboBoxItem Content="Không hoạt động"/>
+                </ComboBox>
+
+                <ComboBox Grid.Column="6" x:Name="cmbDNATestStatusFilter" SelectionChanged="CmbDNATestStatusFilter_SelectionChanged">
+                    <ComboBoxItem Content="Tất cả xét nghiệm"/>
+                    <ComboBoxItem Content="Chưa xét nghiệm"/>
+                    <ComboBoxItem Content="Đang xét nghiệm"/>
+                    <ComboBoxItem Content="Hoàn thành"/>
+                    <ComboBoxItem Content="Đã hủy"/>
+                </ComboBox>
+            </Grid>
+
+            <!-- Second row with action buttons -->
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btnExportReport" Content="📊 Xuất báo cáo" 
+                        Click="BtnExportReport_Click" Style="{StaticResource SecondaryButtonStyle}" 
+                        Margin="0,0,10,0" Padding="10,5"/>
+                <Button Content="🔄 Làm mới" Click="BtnRefresh_Click" 
+                        Style="{StaticResource SecondaryButtonStyle}" Padding="10,5"/>
+            </StackPanel>
+        </Grid>
+
+        <Border Grid.Row="2" Style="{StaticResource CardStyle}">
+            <Grid>
+                <TextBlock x:Name="txtLoading" Text="Đang tải dữ liệu..."
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="18" FontWeight="Bold" Visibility="Collapsed" Panel.ZIndex="1"/>
+
+                <TextBlock x:Name="txtNoData" Text="Không có dữ liệu bệnh nhân nào."
+                           HorizontalAlignment="Center" VerticalAlignment="Center"
+                           FontSize="16" Foreground="Gray" Visibility="Collapsed" Panel.ZIndex="1"/>
+
+                <DataGrid x:Name="dgPatients" AutoGenerateColumns="False" IsReadOnly="True"
+                          SelectionMode="Single" GridLinesVisibility="Horizontal"
+                          RowHeaderWidth="0" CanUserResizeRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding PatientId}" Width="50"/>
+                        <DataGridTextColumn Header="Họ và tên" Binding="{Binding FullName}" Width="150"/>
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="150"/>
+                        <DataGridTextColumn Header="Số điện thoại" Binding="{Binding Phone}" Width="110"/>
+                        <DataGridTextColumn Header="Ngày sinh" Binding="{Binding DateOfBirth, StringFormat='dd/MM/yyyy'}" Width="90"/>
+                        <DataGridTextColumn Header="Giới tính" Binding="{Binding Gender}" Width="70"/>
+                        <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="100"/>
+                        <DataGridTextColumn Header="Trạng thái ADN" Binding="{Binding DNATestStatus}" Width="120"/>
+                        <DataGridTextColumn Header="Số lần XN" Binding="{Binding TotalDNATests}" Width="80"/>
+                        <DataGridTemplateColumn Header="Quản lý bệnh nhân" Width="180">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="✏️" ToolTip="Sửa thông tin" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnEditPatient_Click" Margin="2" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="🗑️" ToolTip="Xóa bệnh nhân" Style="{StaticResource DangerButtonStyle}"
+                                                Click="BtnDeletePatient_Click" Margin="2" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="📋" ToolTip="Xem hồ sơ" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnViewPatientRecord_Click" Margin="2" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Dịch vụ xét nghiệm ADN" Width="250">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="🧬" ToolTip="Đặt xét nghiệm ADN" Style="{StaticResource PrimaryButtonStyle}"
+                                                Click="BtnBookDNATest_Click" Margin="1" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="📦" ToolTip="Yêu cầu kit xét nghiệm" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnRequestSampleKit_Click" Margin="1" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="🏠" ToolTip="Đặt lịch thu mẫu tại nhà" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnScheduleHomeSample_Click" Margin="1" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="📊" ToolTip="Theo dõi tiến độ" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnTrackTestProgress_Click" Margin="1" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="📑" ToolTip="Xem kết quả" Style="{StaticResource SuccessButtonStyle}"
+                                                Click="BtnViewTestResults_Click" Margin="1" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                        <Button Content="📝" ToolTip="Lịch sử xét nghiệm" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnViewDNATestHistory_Click" Margin="1" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Đánh giá" Width="80">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <!-- Corrected ampersand here -->
+                                        <Button Content="⭐" ToolTip="Xem đánh giá &amp; phản hồi" Style="{StaticResource SecondaryButtonStyle}"
+                                                Click="BtnPatientFeedback_Click" Margin="2" Width="28" Height="25"
+                                                Tag="{Binding PatientId}"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

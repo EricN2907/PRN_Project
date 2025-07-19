@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GK03Qb7yOOU=",
+  "dgSpecHash": "rk2ewLcsU1M=",
   "success": true,
-  "projectFilePath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\motmu\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\motmu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\motmu\\.nuget\\packages\\microsoft.extensions.configuration.environmentvariables\\8.0.0\\microsoft.extensions.configuration.environmentvariables.8.0.0.nupkg.sha512",
+    "C:\\Users\\motmu\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -10,3 +10,16 @@ D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLay
 D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\refint\DNA.DataAccessLayer.dll
 D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.pdb
 D:\FPT\PRN211\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\ref\DNA.DataAccessLayer.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\bin\Debug\net8.0\DNA.DataAccessLayer.deps.json
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\bin\Debug\net8.0\DNA.DataAccessLayer.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\bin\Debug\net8.0\DNA.DataAccessLayer.pdb
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.AssemblyInfoInputs.cache
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.AssemblyInfo.cs
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.sourcelink.json
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\refint\DNA.DataAccessLayer.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.pdb
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\ref\DNA.DataAccessLayer.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.DataAccessLayer\obj\Debug\net8.0\DNA.DataAccessLayer.csproj.AssemblyReference.cache

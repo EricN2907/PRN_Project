@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DNA.BussinessObject\DNA.BussinessObject.csproj" />
     <ProjectReference Include="..\DNA.DataAccessLayer\DNA.DataAccessLayer.csproj" />
     <ProjectReference Include="..\DNA.Repository\DNA.Repository.csproj" />

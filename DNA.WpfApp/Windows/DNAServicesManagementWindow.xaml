@@ -1,0 +1,21 @@
+<Window x:Class="DNA.WpfApp.Windows.DNAServicesManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="🧪 Quản lý dịch vụ xét nghiệm ADN" Height="700" Width="1000"
+        WindowStartupLocation="CenterOwner" Background="White">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Text="🧪 Quản lý dịch vụ xét nghiệm ADN" FontSize="20" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        
+        <TextBlock Grid.Row="1" Text="Chức năng quản lý dịch vụ xét nghiệm đang được phát triển..." 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16"/>
+        
+        <Button Grid.Row="2" Content="Đóng" Click="BtnClose_Click" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

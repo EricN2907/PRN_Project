@@ -10,3 +10,16 @@ D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObje
 D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\refint\DNA.BussinessObject.dll
 D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.pdb
 D:\FPT\PRN211\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\ref\DNA.BussinessObject.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\bin\Debug\net8.0\DNA.BussinessObject.deps.json
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\bin\Debug\net8.0\DNA.BussinessObject.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\bin\Debug\net8.0\DNA.BussinessObject.pdb
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.AssemblyInfoInputs.cache
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.AssemblyInfo.cs
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.csproj.CoreCompileInputs.cache
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.sourcelink.json
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\refint\DNA.BussinessObject.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.pdb
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\ref\DNA.BussinessObject.dll
+D:\prn212_Sum\_PRN\Project\PRN_Project\PRN_Project\DNA.BussinessObject\obj\Debug\net8.0\DNA.BussinessObject.csproj.AssemblyReference.cache

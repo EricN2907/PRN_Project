@@ -1,0 +1,233 @@
+<Page x:Class="DNA.WpfApp.Pages.Treatments.TreatmentRegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Treatment Registration">
+
+    <ScrollViewer>
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Header -->
+            <TextBlock Grid.Row="0" Text="Đăng ký dịch vụ điều trị hiếm muộn" FontSize="28" FontWeight="Bold" Margin="0,0,0,30"/>
+            
+            <!-- Patient Selection -->
+            <Border Grid.Row="1" Style="{StaticResource CardStyle}" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="1. Thông tin bệnh nhân" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBlock Grid.Column="0" Text="Chọn bệnh nhân:" VerticalAlignment="Center"/>
+                        <ComboBox Grid.Column="1" x:Name="cmbPatients" DisplayMemberPath="FullName" SelectedValuePath="PatientId"
+                                  SelectionChanged="CmbPatients_SelectionChanged" Margin="10,0"/>
+                        <Button Grid.Column="2" Content="➕ Thêm bệnh nhân mới" Click="BtnAddNewPatient_Click"
+                                Style="{StaticResource PrimaryButtonStyle}" Padding="10,5"/>
+                    </Grid>
+                    
+                    <Border x:Name="pnlPatientInfo" Visibility="Collapsed" Background="#F8F9FA" Padding="15" Margin="0,15,0,0" CornerRadius="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Text="Họ và tên:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtPatientName" Text="-" Margin="0,0,0,10"/>
+                                <TextBlock Text="Email:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtPatientEmail" Text="-"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Số điện thoại:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtPatientPhone" Text="-" Margin="0,0,0,10"/>
+                                <TextBlock Text="Ngày sinh:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtPatientDOB" Text="-"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock Text="Địa chỉ:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtPatientAddress" Text="-" TextWrapping="Wrap"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Border>
+            
+            <!-- Service Selection -->
+            <Border Grid.Row="2" Style="{StaticResource CardStyle}" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="2. Chọn dịch vụ điều trị" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Loại điều trị:" VerticalAlignment="Center"/>
+                            <ComboBox Grid.Column="1" x:Name="cmbTreatmentType" SelectionChanged="CmbTreatmentType_SelectionChanged" Margin="10,0">
+                                <ComboBoxItem Content="-- Chọn loại điều trị --"/>
+                                <ComboBoxItem Content="IUI"/>
+                                <ComboBoxItem Content="IVF"/>
+                                <ComboBoxItem Content="ICSI"/>
+                            </ComboBox>
+                        </Grid>
+                        
+                        <ListBox Grid.Row="1" x:Name="lstServices" SelectionChanged="LstServices_SelectionChanged" 
+                                 Margin="0,15,0,0" MinHeight="150" MaxHeight="200" Visibility="Collapsed">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Padding="10" BorderBrush="#E0E0E0" BorderThickness="1" Margin="0,2">
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="150"/>
+                                                <ColumnDefinition Width="100"/>
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <StackPanel Grid.Column="0">
+                                                <TextBlock Text="{Binding ServiceName}" FontWeight="SemiBold"/>
+                                                <TextBlock Text="{Binding Description}" FontSize="12" Foreground="Gray" TextWrapping="Wrap"/>
+                                            </StackPanel>
+                                            
+                                            <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding Price, StringFormat='{}{0:N0} VNĐ'}" FontWeight="SemiBold" Foreground="#2E86AB"/>
+                                                <TextBlock Text="{Binding DurationDays, StringFormat='{}{0} ngày'}" FontSize="12" Foreground="Gray"/>
+                                            </StackPanel>
+                                            
+                                            <TextBlock Grid.Column="2" Text="{Binding TreatmentType}" VerticalAlignment="Center" 
+                                                       HorizontalAlignment="Center" Background="#E3F2FD" Padding="5" FontSize="12"/>
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </Grid>
+                </StackPanel>
+            </Border>
+            
+            <!-- Doctor Selection -->
+            <Border Grid.Row="3" Style="{StaticResource CardStyle}" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="3. Chọn bác sĩ điều trị" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <TextBlock Grid.Column="0" Text="Bác sĩ:" VerticalAlignment="Center"/>
+                        <ComboBox Grid.Column="1" x:Name="cmbDoctors" DisplayMemberPath="FullName" SelectedValuePath="DoctorId"
+                                  SelectionChanged="CmbDoctors_SelectionChanged" Margin="10,0"/>
+                    </Grid>
+                    
+                    <Border x:Name="pnlDoctorInfo" Visibility="Collapsed" Background="#F8F9FA" Padding="15" Margin="0,15,0,0" CornerRadius="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Text="Chuyên khoa:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtDoctorSpecialization" Text="-" Margin="0,0,0,10"/>
+                                <TextBlock Text="Kinh nghiệm:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtDoctorExperience" Text="-"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Bằng cấp:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtDoctorDegree" Text="-" Margin="0,0,0,10"/>
+                                <TextBlock Text="Phí tư vấn:" FontWeight="SemiBold"/>
+                                <TextBlock x:Name="txtDoctorFee" Text="-"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </StackPanel>
+            </Border>
+            
+            <!-- Schedule and Notes -->
+            <Border Grid.Row="4" Style="{StaticResource CardStyle}" Margin="0,0,0,20">
+                <StackPanel>
+                    <TextBlock Text="4. Lịch trình và ghi chú" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Ngày bắt đầu dự kiến:" VerticalAlignment="Center"/>
+                            <DatePicker Grid.Column="1" x:Name="dpStartDate" Margin="10,0" SelectedDate="{x:Static sys:DateTime.Now}"
+                                        xmlns:sys="clr-namespace:System;assembly=mscorlib"/>
+                        </Grid>
+                        
+                        <Grid Grid.Row="1" Margin="0,15,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Grid.Column="0" Text="Ghi chú:" VerticalAlignment="Top" Margin="0,10,0,0"/>
+                            <TextBox Grid.Column="1" x:Name="txtNotes" Style="{StaticResource InputTextBoxStyle}"
+                                     Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                                     Margin="10,0"/>
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </Border>
+            
+            <!-- Summary and Actions -->
+            <Border Grid.Row="5" Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="5. Tóm tắt đăng ký" FontSize="18" FontWeight="Bold" Margin="0,0,0,15"/>
+                    
+                    <Grid x:Name="pnlSummary" Visibility="Collapsed">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="200"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0">
+                            <TextBlock x:Name="txtSummaryPatient" Text="Bệnh nhân: -" Margin="0,2"/>
+                            <TextBlock x:Name="txtSummaryService" Text="Dịch vụ: -" Margin="0,2"/>
+                            <TextBlock x:Name="txtSummaryDoctor" Text="Bác sĩ: -" Margin="0,2"/>
+                            <TextBlock x:Name="txtSummaryStartDate" Text="Ngày bắt đầu: -" Margin="0,2"/>
+                        </StackPanel>
+                        
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                            <TextBlock Text="Tổng chi phí:" FontWeight="SemiBold" HorizontalAlignment="Right"/>
+                            <TextBlock x:Name="txtTotalCost" Text="0 VNĐ" FontSize="24" FontWeight="Bold" 
+                                       Foreground="#2E86AB" HorizontalAlignment="Right"/>
+                        </StackPanel>
+                    </Grid>
+                    
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,20,0,0">
+                        <Button Content="Hủy bỏ" Click="BtnCancel_Click" Margin="0,0,10,0" Padding="20,10"
+                                Background="Transparent" BorderBrush="#DC3545" BorderThickness="2" Foreground="#DC3545"/>
+                        <Button x:Name="btnRegister" Content="Đăng ký điều trị" Click="BtnRegister_Click" 
+                                Style="{StaticResource PrimaryButtonStyle}" Padding="20,10" IsEnabled="False"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </ScrollViewer>
+</Page>

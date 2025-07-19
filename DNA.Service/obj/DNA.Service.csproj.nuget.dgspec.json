@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\DNA.Service.csproj": {}
+    "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Service\\DNA.Service.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj": {
+    "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
+        "projectUniqueName": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
         "projectName": "DNA.BussinessObject",
-        "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\obj\\",
+        "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\motmu\\.nuget\\packages\\",
+        "outputPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\motmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,11 +44,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,24 +71,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPT\\PRN211\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj": {
+    "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\PRN211\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj",
         "projectName": "DNA.DataAccessLayer",
-        "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.DataAccessLayer\\obj\\",
+        "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\motmu\\.nuget\\packages\\",
+        "outputPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\motmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,11 +115,17 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -130,24 +142,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj": {
+    "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj",
+        "projectUniqueName": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj",
         "projectName": "DNA.Repository",
-        "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\obj\\",
+        "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj",
+        "packagesPath": "C:\\Users\\motmu\\.nuget\\packages\\",
+        "outputPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\motmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -162,8 +174,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj": {
-                "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj"
+              "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj": {
+                "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj"
               }
             }
           }
@@ -178,7 +190,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -206,7 +218,11 @@
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
@@ -229,24 +245,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\DNA.Service.csproj": {
+    "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Service\\DNA.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\DNA.Service.csproj",
+        "projectUniqueName": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Service\\DNA.Service.csproj",
         "projectName": "DNA.Service",
-        "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\DNA.Service.csproj",
-        "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Service\\obj\\",
+        "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Service\\DNA.Service.csproj",
+        "packagesPath": "C:\\Users\\motmu\\.nuget\\packages\\",
+        "outputPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\motmu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -261,14 +277,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj": {
-                "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj"
+              "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj": {
+                "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.BussinessObject\\DNA.BussinessObject.csproj"
               },
-              "D:\\FPT\\PRN211\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj": {
-                "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj"
+              "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj": {
+                "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.DataAccessLayer\\DNA.DataAccessLayer.csproj"
               },
-              "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj": {
-                "projectPath": "D:\\FPT\\PRN211\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj"
+              "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj": {
+                "projectPath": "D:\\prn212_Sum\\_PRN\\Project\\PRN_Project\\PRN_Project\\DNA.Repository\\DNA.Repository.csproj"
               }
             }
           }
@@ -283,11 +299,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -304,7 +334,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
